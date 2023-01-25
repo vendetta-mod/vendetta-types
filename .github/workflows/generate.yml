@@ -26,10 +26,10 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: definitions
-          path: def.yml
+          path: def.d.ts
   
   package:
-    name: Commmit package
+    name: Commit package
     runs-on: ubuntu-latest
     needs: generate
 
@@ -40,6 +40,6 @@ jobs:
         uses: actions/download-artifact@v3
         with:
           name: definitions
-          path: def.yml
+          path: def.d.ts
       
       - run: ls -R
