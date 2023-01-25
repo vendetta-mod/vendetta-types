@@ -39,7 +39,7 @@ jobs:
           ref: npm
 
       - name: Cleanup
-        run: git rm -r .
+        run: git rm -r . || git rm -r * || true
 
       - name: Download artifact
         uses: actions/download-artifact@v3
