@@ -1,0 +1,28 @@
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  generate:
+    name: Generate definitions
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: 6.0.x
+      - name: Install TreeType
+        run: dotnet tool install -g TreeType
+      
+      - name: Generate definitions
+        run: |
+          cat def.yml | ttgen > def.d.ts
+      
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: "definitions"
+          path: "def.yml"
