@@ -5,6 +5,13 @@ decls: |
   type PropsFinder = <T extends string | symbol>(...props: T[]) => PropIntellisense<T>;
   type PropsFinderAll = <T extends string | symbol>(...props: T[]) => PropIntellisense<T>[];
 
+  type SearchFilter = (tree: any) => boolean;
+  interface FindInTreeOptions {
+    walkable?: string[];
+    ignore?: string[];
+    maxDepth?: number;
+  }
+
   type Indexable<Type> = { [index: string]: Type }
 
   interface Asset {
