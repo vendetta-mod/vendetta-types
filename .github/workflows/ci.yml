@@ -84,7 +84,7 @@ jobs:
           npm i
           cd ..
 
-          echo '{"compilerOptions":{"target":"esnext","moduleResolution":"node","allowSyntheticDefaultImports":true}}' > tsconfig.json
+          echo '{"compilerOptions":{"target":"esnext","moduleResolution":"node","allowSyntheticDefaultImports":true,"skipLibCheck":true}}' > tsconfig.json
 
           typedoc npm_package/defs.d.ts
 
