@@ -25,14 +25,6 @@ jobs:
           mkdir build
           cat defs.yml | ttgen > build/defs.d.ts
 
-      - name: Publish artifacts
-        uses: ncipollo/release-action@v1
-        with:
-          artifacts: 'build/*'
-          token: ${{ secrets.GITHUB_TOKEN }}
-          allowUpdates: true
-          tag: build
-
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
