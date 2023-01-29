@@ -2,14 +2,14 @@
 
 These are the type definitions for Vendetta.
 
-You can install the package using `npm install vendetta-typings`.
+You can install the package using `npm install vendetta-types`.
 
 Given you have configured everything correctly, they _should_ work.
 
 However, if they do not, please add the following to the top of your TypeScript file:
 
 ```ts
-/// <reference path="path/to/node_modules/vendetta-typings/defs.d.ts" />
+/// <reference path="path/to/node_modules/vendetta-types/defs.d.ts" />
 ```
 
 # NOTE
