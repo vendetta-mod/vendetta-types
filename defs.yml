@@ -195,7 +195,7 @@ defs:
 
   - plugins:
     - [const, 'plugins: Indexable<Plugin>']
-    - [function, 'fetchPlugin(id: string): void']
+    - [function, 'fetchPlugin(id: string, enabled: boolean): void']
     - [function, 'evalPlugin(plugin: Plugin): void']
     - [function, 'stopPlugin(id: string): void']
     - [function, 'removePlugin(id: string): void']

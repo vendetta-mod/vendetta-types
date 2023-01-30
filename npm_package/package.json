@@ -3,7 +3,7 @@
   "description": "Unofficial types for Vendetta",
   "author": "redstonekasi",
   "license": "BSD-3-Clause",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "types": "def.d.ts",
   "dependencies": {
     "@types/react": "18.0.26",
