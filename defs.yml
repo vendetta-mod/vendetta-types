@@ -209,6 +209,7 @@ defs:
     - [function, 'useProxy<T>(storage: T): T']
     - [function, 'createStorage<T>(storeName: string): Promise<Awaited<T>>']
     - [function, 'wrapSync<T extends Promise<any>>(store: T): Awaited<T>']
+    - [function, 'awaitSyncWrapper(store: any): Promise<void>']
   
   - [const, 'settings: Settings']
   - [const, 'logger: Logger']
