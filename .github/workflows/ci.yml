@@ -26,7 +26,7 @@ jobs:
       - name: Generate defs
         run: |
           mkdir build
-          ttgen -r @vendetta vendetta/src/def.d.ts VendettaObject build/defs.d.ts
+          ttgen -r @vendetta vendetta/src/def.d.ts VendettaObject /:plugin:VendettaPluginObject -o build/defs.d.ts
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
