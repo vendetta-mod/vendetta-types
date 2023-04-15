@@ -3,7 +3,7 @@
   "description": "Official types for Vendetta",
   "author": "redstonekasi",
   "license": "BSD-3-Clause",
-  "version": "2.4.16",
+  "version": "2.4.17",
   "types": "def.d.ts",
   "dependencies": {
     "@types/chroma-js": "^2.4.0",
